@@ -6,6 +6,9 @@
             "config": {
                 "maxLambdaSize": "15mb",
                 "runtime": "python3.9"
+            },
+            "api/**": {
+                "excludeFiles": "{.next,*.cache,node_modules,public,app}/**"
             }
         }
     ],
@@ -15,9 +18,4 @@
             "dest": "project/wsgi.py"
         }
     ],
-    "functions": {
-        "api/**": {
-            "excludeFiles": "{.next,*.cache,node_modules,public,app}/**"
-        }
-    }
 }
